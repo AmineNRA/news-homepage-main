@@ -1,0 +1,28 @@
+{
+  "name": "news-homepage-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel {src/*.html,src/**/*.html}",
+    "build": "parcel build {src/*.html,src/**/*.html}",
+    "clear": "rm -rf .parcel-cache dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmineNRA/news-homepage-main.git"
+  },
+  "author": "AmineNRA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmineNRA/news-homepage-main/issues"
+  },
+  "homepage": "https://github.com/AmineNRA/news-homepage-main#readme",
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "reset-css": "^5.0.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0"
+  }
+}

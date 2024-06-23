@@ -1,0 +1,42 @@
+@use '../var.scss';
+@use '../mixin.scss';
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    .burgerMenu{
+        @include mixin.small{
+         position: fixed;
+         background-color: white ;
+         z-index: 1;
+         top: 1%;
+         right: 1%;
+         width: 70%;
+         height: 100vh;
+        }
+        .fa-xmark{
+            margin: 1.5rem;
+        }
+    }
+    nav{
+        display: flex;
+        @include mixin.small{
+            flex-direction: column;
+            margin: 10rem 0;
+        }
+        a{
+            padding: 1.5rem;
+            color: var.$dark-grayish-bleu;
+            @include mixin.small{
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            &:hover{
+                color: var.$soft-red;
+            }
+        }
+    }
+}

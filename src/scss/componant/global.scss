@@ -1,0 +1,32 @@
+@use '../mixin.scss';
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    padding: 4rem 4rem 0 4rem;
+    @include mixin.small{
+        padding: 1.5rem 1rem;
+    }
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.hidden{
+    @include mixin.small{
+    display: none;
+    }
+}
+
+.hiddenicon{
+    @include mixin.large{
+        display: none;
+    }
+}
